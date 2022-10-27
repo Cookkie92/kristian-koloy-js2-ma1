@@ -6,18 +6,30 @@ fetch("https://fakestoreapi.com/products")
   .then((jsonData) => {
     try {
       const results = jsonData;
+      let prices = results[i].price;
       console.log(results);
       resultsContainer.innerHTML = "";
       for (let i = 0; i < results[0].title.length; i++) {
-        resultsContainer.innerHTML += `
-                <div class="result">
-                <h3 class="title">${results[i].title}</h3>
-                <img class="image" src="${results[i].image}" alt="thumbnail">
-                <p>${results[i].price}$</p>
-                </div>
+        // resultsContainer.innerHTML += `
+        //         <div class="result">
+        //         <h3 class="title">${results[i].title}</h3>
+        //         <img class="image" src="${results[i].image}" alt="thumbnail">
+        //         <p>${results[i].price}$</p>
+        //         </div>
+
+        //     `;
+        // console.log(typeof results[i].price);
+        function renderPrice() {
+          results.forEach(function (prices) {
+            resultsContainer.innerHTML += `
+              <div class="result>
+              ${results[i].price}
+              </div>
+  
             
             `;
-        console.log(typeof results[i].price);
+          });
+        }
       }
     } catch (error) {
       console.log("an error occured");
@@ -27,4 +39,7 @@ fetch("https://fakestoreapi.com/products")
 
 inputPrice.onkeyup = function () {
   console.log(event.target.value);
+  const searchValue = event.target.value.trim();
+  const filterPrice = results.filter(function())
 };
+renderPrice();
