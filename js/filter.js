@@ -20,7 +20,8 @@ fetch("https://fakestoreapi.com/products")
         console.log(typeof results[i].price);
       }
     } catch (error) {
-      console.log(error);
+      console.log("an error occured");
+      resultsContainer.innerHTML = displayError("bad stuff");
     }
   });
 

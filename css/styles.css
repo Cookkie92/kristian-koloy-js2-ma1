@@ -56,3 +56,8 @@ body {
     transform: rotate(1turn);
   }
 }
+
+.error {
+  border: 1px solid darkred;
+  color: darkred;
+}
