@@ -24,8 +24,6 @@ export function searchPrices(productsToSearch) {
           return true;
         }
       });
-      if (filteredProducts.length === 0) {
-      }
 
       renderProducts(filteredProducts);
     };

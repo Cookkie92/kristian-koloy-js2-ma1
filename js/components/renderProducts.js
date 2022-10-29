@@ -9,4 +9,11 @@ export function renderProducts(productsToRender) {
              <p>${product.price}$</p>
              </div>`;
   });
+  if (productsToRender.length === 0) {
+    productContainer.InnerHTML += `
+    <div class="products">
+             <h3 class="title">No Products Found</h3>
+             </div>
+    `;
+  }
 }
