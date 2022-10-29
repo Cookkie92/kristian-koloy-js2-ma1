@@ -12,7 +12,7 @@ export function searchPrices(productsToSearch) {
         renderProducts(productsToSearch);
         return;
       }
-      const intParse = parseInt(priceValue);
+      const intParse = parseFloat(priceValue);
       if (isNaN(intParse)) {
         throw `This is not a number`;
       }
