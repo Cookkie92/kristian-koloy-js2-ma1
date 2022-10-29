@@ -25,8 +25,6 @@ export function searchPrices(productsToSearch) {
         }
       });
       if (filteredProducts.length === 0) {
-        const emptyError = document.querySelector(".empty");
-        emptyError.style.display = "block";
       }
 
       renderProducts(filteredProducts);
