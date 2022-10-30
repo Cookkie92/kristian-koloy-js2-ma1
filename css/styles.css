@@ -1,11 +1,6 @@
 nav {
   text-align: center;
 }
-form {
-}
-/* .empty {
-  display: none;
-} */
 .products {
   margin: 0 auto;
   display: grid;
@@ -22,7 +17,7 @@ form {
 }
 
 body {
-  margin: 30px;
+  margin: 20px;
 }
 .loading {
   position: fixed;
